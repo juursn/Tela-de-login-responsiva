@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Montserrat','Franklin Gothic Medium', Arial, sans-serif ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+
+    background-color: white;
+    box-shadow: 0px 0px 13px black;
+    width: 93vw;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 18px;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+#login > div#foto{
+    background: black url(../img/fundo.jpg) top center no-repeat;
+    background-size: cover;
+    height: 150px;
+    
+}
+
+#login > #form {
+    display: block;
+    padding: 18px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 2em;
+}
+
+div#form > p{
+    font-size: 1em;
+    text-align: center;
+
+}
+
+div.campo{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    height: 40px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+div.campo > label{
+    display: none;
+}
+div.campo > i{
+    background-color: rgb(51, 51, 51);
+    font-size: 2em;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+div.campo > input{
+    font-size: 1em;
+    width: calc(100% - 45px);
+    padding: 0px 5px ;
+    height: 100%;
+    border: solid rgb(51, 51, 51);
+    border-radius: 8px;
+    transform: translateY(-12px);
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+form > input[type=submit]:hover{
+
+    background-color: rgb(76, 75, 75);
+    transition: .5s;
+    cursor: pointer;
+}
+
+form > a.button-esq{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+
+    margin-top: 13px;
+    width: 100%;
+    height: 40px;
+    border: solid rgb(76, 75, 75) 2px;
+    border-radius:8px;
+}
+form > a.button-esq:hover{
+    background-color: rgb(76, 75, 75);
+    color: white;
+
+    transition: .5s;
+}
